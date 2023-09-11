@@ -12,7 +12,7 @@ const Navbar = () => {
                     <Image src="/logo.svg" alt="Logo" width={200} height={200} className=""/>
                 </Link>
 
-                <button className="font-semibold text-base py-3 px-8 rounded-[5px] bg-primary-blue ">Sign In</button>
+                <button className="font-semibold text-base py-3 px-8 rounded-[5px] text-white bg-primary-blue ">Sign In</button>
             </nav>
         </header>
     );
