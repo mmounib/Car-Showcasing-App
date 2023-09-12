@@ -3,6 +3,16 @@ import {fetchCars} from "@/Utilities/fetchApi";
 import headerSection from "@/components/HeaderSection";
 import Card from "@/components/Card";
 
+interface CarCardProps {
+    model: string;
+    make: string;
+    mpg: number;
+    transmission: string;
+    year: number;
+    drive: string;
+    cityMPG: number;
+}
+
 export default async function Home() {
     const allCars = await fetchCars()
     const isEmpty = allCars.length < 1 || !allCars
@@ -25,7 +35,7 @@ export default async function Home() {
                 {!isEmpty ? (
                     <section>
                         <div className="grid 2xl:grid-cols-4 xl:grid-cols-3 md:grid-cols-2 grid-cols-1 w-full gap-8 pt-14">
-                            {allCars?.map((cars: any) => (
+                            {allCars?.map((cars: CarCardProps) => (
                                 <Card cars={cars}/>
                             ))}
                         </div>
