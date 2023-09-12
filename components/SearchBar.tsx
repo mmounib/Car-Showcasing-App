@@ -10,8 +10,8 @@ const SearchBar = () => {
 
     }
     return (
-        <form className="flex items-center justify-start max-sm:flex-col w-full relative max-sm:gap-4 max-w-3xl" onSubmit={handleSearch}>
-            <div className="flex-1 max-sm:w-full flex justify-start items-center relative">
+        <form className="searchbar" onSubmit={handleSearch}>
+            <div className="searchbar__item">
                 <Manufacturer manufacturer={manuf} setManufacturer={setManuf}/>
             </div>
         </form>
