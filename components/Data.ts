@@ -1,4 +1,5 @@
 import ButtonChanger from "./ButtonChanger";
+import CarDetails from "./CarDetails";
 import Filters from "./Filters";
 import Footer from "./Footer";
 import HeaderSection from "./HeaderSection";
@@ -13,5 +14,6 @@ export {
     Footer,
     SearchBar,
     Filters,
-    Manufacturer
+    Manufacturer,
+    CarDetails
 }

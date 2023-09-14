@@ -1,8 +1,14 @@
-import React from 'react';
+'use client'
+import React, {MouseEventHandler} from 'react';
 
-const ButtonChanger = ({text}: {text: string}) => {
+interface btn {
+    text: string,
+    handleClick?: MouseEventHandler<HTMLButtonElement>
+}
+const ButtonChanger = ({text, handleClick}: btn) => {
+
     return (
-        <button className="font-semibold  mt-16 text-lg rounded-[5px] max-sm:text-sm bg-primary-blue py-4 px-8 ">{text}</button>
+        <button onClick={handleClick} className="font-semibold text-white mt-16 text-lg rounded-[5px] max-sm:text-sm bg-primary-blue py-4 px-8 ">{text}</button>
     )
 };
 

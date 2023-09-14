@@ -1,5 +1,5 @@
 import {Filters, HeaderSection, SearchBar} from "@/components/Data";
-import {fetchCars} from "@/Utilities/fetchApi";
+import {fetchCars} from "@/Utilities";
 import headerSection from "@/components/HeaderSection";
 import Card from "@/components/Card";
 
@@ -10,7 +10,7 @@ interface CarCardProps {
     transmission: string;
     year: number;
     drive: string;
-    cityMPG: number;
+    city_mpg: number;
 }
 
 export default async function Home() {
