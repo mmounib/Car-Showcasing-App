@@ -1,5 +1,6 @@
 // import axios from 'axios';
 import axios from 'axios';
+import {CarProps} from "@/types";
 
 const options = {
     method: 'GET',
@@ -29,4 +30,7 @@ export const fetchCars = async () => {
     })
 
     return response.data
+}
+export const generateCarUrl = (car: CarProps, angle?: string) => {
+
 }

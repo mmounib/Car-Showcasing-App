@@ -51,8 +51,13 @@ const CarDetails = ({opened, closeModal, car}: carDetail) => {
                                       </div>
                                       <div className="flex flex-col">
                                           <h1 className="font-bold text-2xl pt-6 text-left text-black capitalize">{car.make} {car.model}</h1>
-                                          <div className="flex flex-col gap-3.5">
-
+                                          <div className="flex flex-col gap-4 mt-5 flex-wrap">
+                                              {Object.entries(car).map(([key, value]) => (
+                                                  <div key={key} className="flex w-full justify-between items-center">
+                                                    <h4 className="text-lg">{key}</h4>
+                                                    <span>{value}</span>
+                                                  </div>
+                                              ))}
                                           </div>
                                       </div>
                                   </div>

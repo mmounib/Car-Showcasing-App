@@ -5,7 +5,7 @@ import Link from "next/link";
 const Footer = () => {
     return (
         <footer className="flex flex-col gap-14 items-center max-sm:px-7 my-10 border-t-[1px] border-gray-800">
-            <div className="flex justify-between w-full my-8 px-16 max-sm:mt-4">
+            <div className="flex justify-between max-sm:flex-col w-full my-8 px-16 max-sm:px-10 max-sm:mt-4">
                 <div className="flex flex-col gap-6 items-center">
                     <Image src="/logo.svg" alt="Logo" width={170} height={170}
                            className="bg-white bg-opacity-80 py-4 px-6 rounded-2xl backdrop-blur-sm"/>
@@ -14,7 +14,7 @@ const Footer = () => {
                         <p>All Rights Reserved ©</p>
                     </div>
                 </div>
-                <div className="flex gap-20 text-gray-300">
+                <div className="flex lg:gap-20 text-gray-300 gap-10 max-sm:w-full">
                     {footerLinks.map((link) => (
                         <div key={link.title} className="flex flex-col gap-7">
                             <h1 className="font-bold text-xl">{link.title}</h1>
