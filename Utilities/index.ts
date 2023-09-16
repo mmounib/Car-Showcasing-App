@@ -2,6 +2,13 @@
 import axios from 'axios';
 import {CarProps} from "@/types";
 
+interface carOptions {
+    manufacturer: string,
+    model:string,
+    fuel:string,
+    year: number,
+    limit: number,
+}
 const options = {
     method: 'GET',
     url: 'https://cars-by-api-ninjas.p.rapidapi.com/v1/cars',
@@ -19,13 +26,13 @@ try {
     console.error(error);
 }
 
-export const fetchCars = async () => {
+export const fetchCars = async ({manufacturer, model, fuel, year, limit}: carOptions) => {
     const headers = {
         'X-RapidAPI-Key': 'a9a142b421msha80555c588fc161p1071fejsn2bf648b1b953',
         'X-RapidAPI-Host': 'cars-by-api-ninjas.p.rapidapi.com'
     }
 
-    const response = await axios.get("https://cars-by-api-ninjas.p.rapidapi.com/v1/cars?model=corolla", {
+    const response = await axios.get(`https://cars-by-api-ninjas.p.rapidapi.com/v1/cars?make=${manufacturer}&year=${year}&model=${model}&limit=${limit}&fuel_type=${fuel}`, {
         headers: headers
     })
 

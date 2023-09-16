@@ -2,6 +2,7 @@ import {Filters, HeaderSection, SearchBar} from "@/components/Data";
 import {fetchCars} from "@/Utilities";
 import headerSection from "@/components/HeaderSection";
 import Card from "@/components/Card";
+import {fuels, years} from "@/types";
 
 interface CarCardProps {
     model: string;
@@ -13,8 +14,14 @@ interface CarCardProps {
     city_mpg: number;
 }
 
-export default async function Home() {
-    const allCars = await fetchCars()
+export default async function Home({searchParams}) {
+    const allCars = await fetchCars({
+        manufacturer: searchParams.manufacturer || '',
+        model: searchParams.model || '',
+        fuel: searchParams.fuel || '',
+        year: searchParams.year || 2022,
+        limit: searchParams.limit || 10,
+    })
     const isEmpty = allCars.length < 1 || !allCars
 
     return (
@@ -28,8 +35,8 @@ export default async function Home() {
                 <div className="home__filters">
                     <SearchBar/>
                     <div className="home__filter-container">
-                        <Filters text="fuel"/>
-                        <Filters text="year"/>
+                        <Filters text="fuel" options={fuels}/>
+                        <Filters text="year" options={years}/>
                     </div>
                 </div>
                 {!isEmpty ? (

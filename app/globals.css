@@ -200,7 +200,7 @@ body {
 }
 
 .searchbar__input {
-    @apply w-full h-[48px] pl-12 p-4 bg-gray-800 rounded-r-full max-sm:rounded-full outline-none text-sm;
+    @apply w-full h-[48px] pl-12 p-4 bg-gray-800 text-white rounded-r-full max-sm:rounded-full outline-none text-sm;
 }
 
 /* END: searchbar styles */
