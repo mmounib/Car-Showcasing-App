@@ -1,6 +1,6 @@
 # Car Showcasing Project
 
-A web application for showcasing cars, built using Next.js, Tailwind CSS, Headless UI, and integrated with an existing Cars API.
+A web application for showcasing cars, built with Typescript by using Next, Tailwind CSS, Headless UI, and integrated with an existing Cars API.
 
 ![Project Screenshot](screenshot.png) <!-- Add a screenshot of your project -->
 
