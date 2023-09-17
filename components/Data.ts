@@ -6,6 +6,7 @@ import HeaderSection from "./HeaderSection";
 import Manufacturer from "./Manufacturer";
 import Navbar from "./Navbar";
 import SearchBar from "./SearchBar";
+import ShowMore from "./ShowMore";
 
 export {
     HeaderSection,
@@ -15,5 +16,6 @@ export {
     SearchBar,
     Filters,
     Manufacturer,
-    CarDetails
+    CarDetails,
+    ShowMore
 }

@@ -24,7 +24,7 @@ export interface CarProps {
 }
 
 export const years  = [
-    { title: "Year", value: "" },
+    { title: "Year", value: "Year" },
     { title: "2015", value: "2015" },
     { title: "2016", value: "2016" },
     { title: "2017", value: "2017" },
@@ -39,7 +39,7 @@ export const years  = [
 export const fuels = [
     {
         title: "Fuel",
-        value: "",
+        value: "Fuel",
     },
     {
         title: "Gas",

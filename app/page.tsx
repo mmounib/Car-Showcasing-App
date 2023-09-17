@@ -1,4 +1,4 @@
-import {Filters, HeaderSection, SearchBar} from "@/components/Data";
+import {Filters, HeaderSection, SearchBar, ShowMore} from "@/components/Data";
 import {fetchCars} from "@/Utilities";
 import headerSection from "@/components/HeaderSection";
 import Card from "@/components/Card";
@@ -41,11 +41,13 @@ export default async function Home({searchParams}) {
                 </div>
                 {!isEmpty ? (
                     <section>
-                        <div className="grid 2xl:grid-cols-4 xl:grid-cols-3 md:grid-cols-2 grid-cols-1 w-full gap-8 pt-14">
+                        <div
+                            className="grid 2xl:grid-cols-4 xl:grid-cols-3 md:grid-cols-2 grid-cols-1 w-full gap-8 pt-14">
                             {allCars?.map((cars: CarCardProps) => (
                                 <Card cars={cars}/>
                             ))}
                         </div>
+                        <ShowMore pageNumber={(searchParams.limit || 10) / 10} isNext={(searchParams.limit || 10) > allCars.length}/>
                     </section>
                 ) : (
                     <div className="home__error-container">
