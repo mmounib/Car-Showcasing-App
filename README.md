@@ -9,10 +9,6 @@ A web application for showcasing cars, built with Typescript and NextAuth.js by 
 - [Features](#features)
 - [Technologies Used](#technologies-used)
 - [Getting Started](#getting-started)
-- [Usage](#usage)
-- [API Integration](#api-integration)
-- [Contributing](#contributing)
-- [License](#license)
 
 ## Features
 
