@@ -1,8 +1,10 @@
-import {Filters, HeaderSection, SearchBar, ShowMore} from "@/components/Data";
+import {Filters, HeaderSection, Navbar, SearchBar, ShowMore} from "@/components/Data";
 import {fetchCars} from "@/Utilities";
 import headerSection from "@/components/HeaderSection";
 import Card from "@/components/Card";
 import {fuels, years} from "@/types";
+import {getServerSession} from "next-auth";
+import {AuthOptions} from "@/app/api/auth/[...nextauth]/route";
 
 interface CarCardProps {
     model: string;
@@ -24,8 +26,12 @@ export default async function Home({searchParams}) {
     })
     const isEmpty = allCars.length < 1 || !allCars
 
+
+    const session = await getServerSession(AuthOptions)
     return (
         <div className="">
+
+            <Navbar session={session}/>
             <HeaderSection/>
             <div className="mt-32 padding-x padding-y max-width" id="discover">
                 <div className="flex flex-col gap-4 text-white">
@@ -47,7 +53,8 @@ export default async function Home({searchParams}) {
                                 <Card cars={cars}/>
                             ))}
                         </div>
-                        <ShowMore pageNumber={(searchParams.limit || 10) / 10} isNext={(searchParams.limit || 10) > allCars.length}/>
+                        <ShowMore pageNumber={(searchParams.limit || 10) / 10}
+                                  isNext={(searchParams.limit || 10) > allCars.length}/>
                     </section>
                 ) : (
                     <div className="home__error-container">

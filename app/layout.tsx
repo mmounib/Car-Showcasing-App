@@ -16,10 +16,10 @@ export default function RootLayout({
 }: {
   children: ReactNode
 }) {
+
   return (
     <html lang="en">
       <body className="relative">
-      <Navbar />
       {children}
       <Footer />
       </body>
