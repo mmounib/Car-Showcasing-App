@@ -5,7 +5,7 @@ import React from "react";
 
 const Navbar = () => {
     return (
-        <header className="w-full absolute z-10 ">
+        <header className="w-full absolute z-10 max-sm:w-[95%] max-sm:ml-2">
             <nav
                 className="max-w-[1440px] mx-auto bg-white bg-opacity-80 py-4 px-6 max-sm:px-4 max-sm:py-1.5 rounded-2xl backdrop-blur-sm  sm:mt-1.5 flex justify-between items-center">
                 <Link href="/">
