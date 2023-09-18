@@ -2,8 +2,9 @@
 
 A web application for showcasing cars, built with Typescript and NextAuth.js by using Next, Tailwind CSS, Headless UI, and integrated with an existing Cars API.
 
-![Project Screenshot](screenshot.png) <!-- Add a screenshot of your project -->
-
+![Screenshot from 2023-09-18 18-38-28](https://github.com/mmounib/Car-Showcasing-App/assets/93907293/4b742b63-96d4-4e75-869f-9f7d207720aa)
+![Screenshot from 2023-09-18 18-38-47](https://github.com/mmounib/Car-Showcasing-App/assets/93907293/156cce67-4fa4-433d-a00a-3aa50db29cb8)
+![Screenshot from 2023-09-18 18-38-58](https://github.com/mmounib/Car-Showcasing-App/assets/93907293/8bf02585-e573-49e2-ab20-5cee37f1ed69)
 ## Table of Contents
 
 - [Features](#features)
