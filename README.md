@@ -1,6 +1,6 @@
 # Car Showcasing Project
 
-A web application for showcasing cars, built with Typescript by using Next, Tailwind CSS, Headless UI, and integrated with an existing Cars API.
+A web application for showcasing cars, built with Typescript and NextAuth.js by using Next, Tailwind CSS, Headless UI, and integrated with an existing Cars API.
 
 ![Project Screenshot](screenshot.png) <!-- Add a screenshot of your project -->
 
@@ -17,6 +17,7 @@ A web application for showcasing cars, built with Typescript by using Next, Tail
 ## Features
 
 - **Car Showcase:** Display a list of cars with details like make, model, year, and images.
+- **Authentication:** User Have to sign in using Github or Google Authentication.
 - **Search Functionality:** Allow users to search for cars based on various criteria.
 - **Responsive Design:** Ensure the application is usable on both desktop and mobile devices.
 - **Pagination:** Implement pagination for the list of cars.
