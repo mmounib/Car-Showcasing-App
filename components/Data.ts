@@ -1,12 +1,12 @@
-import ButtonChanger from "./ButtonChanger";
-import CarDetails from "./CarDetails";
-import Filters from "./Filters";
-import Footer from "./Footer";
-import HeaderSection from "./HeaderSection";
-import Manufacturer from "./Manufacturer";
-import Navbar from "./Navbar";
-import SearchBar from "./SearchBar";
-import ShowMore from "./ShowMore";
+import ButtonChanger from "./Helpers/ButtonChanger";
+import CarDetails from "./Cards/CarDetails";
+import Filters from "./Helpers/Filters";
+import Footer from "./Footer/Footer";
+import HeaderSection from "./Header/HeaderSection";
+import Manufacturer from "./Manufacturer/Manufacturer";
+import Navbar from "./Navbar/Navbar";
+import SearchBar from "./Helpers/SearchBar";
+import ShowMore from "./Helpers/ShowMore";
 
 export {
     HeaderSection,

@@ -1,6 +1,6 @@
 import Image from "next/image";
-import {footerLinks} from "@/components/constants";
 import Link from "next/link";
+import { footerLinks } from "../Helpers/constants";
 
 const Footer = () => {
     return (
@@ -14,7 +14,7 @@ const Footer = () => {
                         <p>All Rights Reserved ©</p>
                     </div>
                 </div>
-                <div className="flex lg:gap-20 text-gray-300 gap-10 max-sm:w-full">
+                <div className="flex lg:gap-20 max-sm:mt-8 max-sm:justify-center text-gray-300 gap-10 max-sm:w-full">
                     {footerLinks.map((link) => (
                         <div key={link.title} className="flex flex-col gap-7">
                             <h1 className="font-bold text-xl">{link.title}</h1>
