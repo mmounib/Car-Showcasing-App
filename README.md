@@ -39,4 +39,11 @@ Follow these steps to get the project up and running on your local machine:
    ```bash
    npm install
    npm run dev
+3. **Create an Environment Variable File named ".env.local" And Store in It:**
+   ```bash
+      GOOGLE_CLIENT_ID,
+      GOOGLE_CLIENT_SECRET,
+      GITHUB_SECRET,
+      GITHUB_ID,
+      NEXTAUTH_ID ( which is a randomly generated code of your choice)
 
